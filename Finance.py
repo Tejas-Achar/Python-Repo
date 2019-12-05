@@ -10,10 +10,10 @@ import sharepy as sharepy
 import requests
 import json
 
-s = sharepy.connect("https://qonline.sharepoint.com",username="EnterpriseAdmin@qonline.onmicrosoft.com", password="qUiNN0x#321")
-r = s.getfile("https://qonline.sharepoint.com/:x:/r/sites/EnterpriseAdminDashboard/Shared%20Documents/input.xlsx", filename = 'input.xlsx')
+s = sharepy.connect("https://qonline.sharepoint.com",username="User@Organization.onmicrosoft.com", password="Password")
+r = s.getfile("URL to the file", filename = 'file.extension')
 print("Status Code : ",r.status_code)
-print("File Downloaded")
+
 
 
 revenueC = []
