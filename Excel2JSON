@@ -1,7 +1,11 @@
+#Import Pandas
 import pandas
 
-excel_data_df = pandas.read_excel('C:/Users/Tejas/Downloads/book.xlsx', sheet_name='Sheet1')
+#Load data into data frame
+excel_data_df = pandas.read_excel('Path To xlsx file', sheet_name='SheetName')
 
+#Convert DF to Json string
 json_str = excel_data_df.to_json(orient='records')
 
+#Print JSON
 print('Excel Sheet to JSON:\n', json_str)
