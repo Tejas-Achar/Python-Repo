@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('C:\\Users\\tejasa\\Downloads\\Consumer_Complaints.csv')
+df = pd.read_csv('Consumer_Complaints.csv')
 df.head()
 
 from io import StringIO
